@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header: #192734;
+
+  --background: #15202b;
+  --card: #22303c;
+  --text: #8899a6;
+  --primary-text: #fff;
+  --ff-Hanken-Grotesk: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  color: rgba(246, 246, 246, 0.899);
+  background-color: var(--background);
+  padding-top: 100px;
+  font-family: var(--ff-Hanken-Grotesk);
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--header);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.title {
+  color: var(--primary-text);
+}
+.search {
+  max-width: 100%;
+}
+.input {
+  padding: 15px 40px 15px 15px;
+  border: none;
+  margin-right: 20px;
+  background-color: var(--card);
+  color: var(--primary-text);
+  outline: none;
+  font-size: 16px;
+  max-width: 100%;
+}
+#main {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.card {
+  padding: 10px;
+  background-color: var(--card);
+  width: 355px;
+  border-radius: 20px;
+}
+.card:hover {
+  background-color: var(--header);
+}
+.moviePoster {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.movieTitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 15px;
+}
+
+@media (max-width: 500px) {
+  .header {
+    justify-content: center;
+  }
+  .input {
+    margin-left: 20px;
+  }
+}
